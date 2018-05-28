@@ -18,8 +18,10 @@ in the file's "OriginalFilename" tag, enter "restore" and enter.
 
 Alternatively, you can add a switch with the command.
 e.g.
+
     python3 Remebrall.py -c save "path/to/directory/with/mkv/files"
     python3 Remebrall.py -c restore "path/to/directory/with/mkv/files"
 
 To recurse through inner directories, use the -R switch.
+
     python3 Remebrall.py -R -c save "path/to/directory/with/mkv/files"
