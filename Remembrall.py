@@ -157,6 +157,7 @@ class Remembrall(object):
             res.append(errorFile)
         res.append('---------------------------------------------------')
         strn = '\n'.join(res)
+        print(strn)
         with open('log.txt', 'a', encoding='utf-8') as f:
             f.write(strn)
 
