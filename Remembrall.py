@@ -176,7 +176,8 @@ class Remembrall(object):
                 segment.remove_children_named('Tags')
                 segment.add_child(tagGroups, 0)
                 segment.normalize()
-                os.chmod(src, stat.S_IWRITE)
+                access = os.stat(src)
+                os.chmod(src, access.st_mode | stat.S_IWRITE)
                 with open(src, 'rb+') as f:
                     ebmlFile.save_changes(f)
             except Exception as e:
