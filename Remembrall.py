@@ -151,6 +151,7 @@ class Remembrall(object):
         res.append('Following files could not be processed.')
         res.append('Your original source files likely had problems.')
         res.append('Use tools like mkvtoolnix-gui to inspect and fix.')
+        res.append('Also try mkvmerge badfile.mkv -o newfile.mkv')
         res.append('---------------------------------------------------')
         for errorFile in aFilename:
             res.append(errorFile)
