@@ -4,6 +4,7 @@ mkv files with its current name
 
 ## Requirements
     python3
+    python-ebml: https://github.com/QBobWatson/python-ebml
 
 ## Installation
     git clone https://github.com/johnelliotbaker/Remembrall.git
